@@ -7,9 +7,35 @@
     <meta charset="UTF-8">
     <title>Chode Or Not | {% block title %}{% endblock %} </title>
     <link href="{% static 'css/cyborg.bootstrap.css' %}"%} rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
 </head>
 <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img class="navbar-brand" src="{% static "images/logo.jpg" %}" alt="logo"/>
+            <a class="navbar-brand" href="/sysrev/">Chode Or Not</a>
+        </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+{#                    <li><a href="/sysrev/update_profile">Update Profile</a></li>#}
+{#                    <li><a href="{% url 'about' %}">About</a></li>#}
+{#					<li><a href="/sysrev/logout">LogOut</a></li>#}
+                </ul>
+            </div>
+
+    </div>
+    </div>
     {#    Page specific content goes here #}
+    <div class="jumbotron"><div class="container">
     {% block body_block %}{% endblock %}
+    </div></div>
 </body>
 </html>
