@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load staticfiles %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chode Or Not | {% block title %}{% endblock %} </title>
+    <link href="{% static 'css/cyborg.bootstrap.css' %}"%} rel="stylesheet">
+</head>
+<body>
+    {#    Page specific content goes here #}
+    {% block body_block %}{% endblock %}
+</body>
+</html>
