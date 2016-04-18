@@ -6,36 +6,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Chode Or Not | {% block title %}{% endblock %} </title>
-    <link href="{% static 'css/cyborg.bootstrap.css' %}"%} rel="stylesheet">
+     <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <img class="navbar-brand" src="{% static "images/logo.jpg" %}" alt="logo"/>
-            <a class="navbar-brand" href="/sysrev/">Chode Or Not</a>
-        </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-{#                    <li><a href="/sysrev/update_profile">Update Profile</a></li>#}
-{#                    <li><a href="{% url 'about' %}">About</a></li>#}
-{#					<li><a href="/sysrev/logout">LogOut</a></li>#}
-                </ul>
-            </div>
+<body class = "grey darken-3">
+    <nav class="red accent-3" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Chode Or Not?</a>
+{#      <ul class="right hide-on-med-and-down">#}
+{#        <li><a href="#">Navbar Link</a></li>#}
+{#      </ul>#}
 
+{#      <ul id="nav-mobile" class="side-nav">#}
+{#        <li><a href="#">Navbar Link</a></li>#}
+{#      </ul>#}
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
-    </div>
+  </nav>
+
+
     {#    Page specific content goes here #}
-    <div class="jumbotron"><div class="container">
+
     {% block body_block %}{% endblock %}
-    </div></div>
+
+{#    <footer class="page-footer orange">#}
+{#    <div class="footer-copyright">#}
+{#      <div class="container">#}
+{#      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>#}
+{#      </div>#}
+{#    </div>#}
+{#  </footer>#}
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>

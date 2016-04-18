@@ -1,5 +1,14 @@
-#danger_red_text_for_warning{
-    color: #cc0000;
-    margin-top: 100px;
-    margin-bottom: 100px;
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
 }
