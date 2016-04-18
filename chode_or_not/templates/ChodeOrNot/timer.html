@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends 'ChodeOrNot/base.html' %}
 
-</body>
-</html>
+{% load staticfiles %}
+
+{% block body_block %}
+
+    <div class="row">
+
+        <div class="col-sm-push-4" id="countdown_timer">
+        </div><br/>
+
+    </div>
+
+
+
+    <script src = "{% static 'js/countdown_timer.js' %}"></script>
+
+{% endblock %}
+

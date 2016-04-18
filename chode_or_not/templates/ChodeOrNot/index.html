@@ -4,15 +4,21 @@
 {% block title %} Index {% endblock %}
 
 {% block body_block %}
+
+
     <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
+        <h2 class="header center white-text">Chode Or Not?</h2>
       <h1 class="header center red-text" id="danger_red_text_for_warning">Are You Ready To Take The Chode Or Not Challenge?<br/>
                                                                             1 hour. 7 Approaches. $10 If You Fail To Complete.</h1>
     <br/>
       <div class="row center">
-        <a href="{% url 'chodeOrNot/timer' %}" id="download-button" class="btn-large waves-effect waves-light light-blue">Challenge Accepted</a>
+        <a href="/chodeOrNot/timer" id="challenge-button" class="btn-large waves-effect waves-light light-blue">Challenge Accepted</a>
       </div>
       <br><br>
+
+
+
 
 {% endblock %}
