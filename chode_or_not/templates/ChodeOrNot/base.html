@@ -22,19 +22,21 @@
     <!-- Import jQuery for additional functionality and interactivity -->
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/flipclock.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/materialize.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/init.js' %}"></script>
 
 </head>
 
 <body class = "grey darken-3">
     <nav class="red accent-3" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Chode Or Not?</a>
-{#      <ul class="right hide-on-med-and-down">#}
-{#        <li><a href="#">Navbar Link</a></li>#}
-{#      </ul>#}
+    <div class="nav-wrapper container"><a id="logo-container" href="chodeOrNot/" class="brand-logo">Chode Or Not?</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-{#      <ul id="nav-mobile" class="side-nav">#}
-{#        <li><a href="#">Navbar Link</a></li>#}
-{#      </ul>#}
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
@@ -50,13 +52,13 @@
 {#  </footer>#}
 
 
-=======
+
 
     {#    Page specific content goes here #}
 
     {% block body_block %}{% endblock %}
 
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+
 
 </body>
 </html>
