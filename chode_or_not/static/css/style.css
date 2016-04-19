@@ -12,10 +12,11 @@
 .icon-block .material-icons {
     font-size: inherit;
 }
+
 #countdown_timer{
-    margin-top: 300px;
-    margin-bottom: auto;
-    height: 1000%;
-    width: 1000%;
->>>>>>> a187e11462695d1a32f8590be74eb7eff5b15035
+    width: 50%;
+    display: inline-block;
+    width: auto;
+
+
 }
