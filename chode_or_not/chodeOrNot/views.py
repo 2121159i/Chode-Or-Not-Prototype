@@ -17,6 +17,11 @@ def index(request):
     # Note that the first parameter is the template we wish to use.
     return render(request, 'ChodeOrNot/index.html', context_dict)
 
+
 def timer(request):
     context_dict = {}
     return render(request, 'ChodeOrNot/timer.html', context_dict)
+
+def timeup(request):
+    context_dict = {}
+    return render(request, 'ChodeOrNot/timeup.html', context_dict)

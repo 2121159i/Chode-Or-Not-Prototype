@@ -5,4 +5,5 @@ from chodeOrNot import views
 urlpatterns = patterns('',
         url(r'^$', views.index, name='index'),
         url(r'^timer/',views.timer, name='timer'),
+        url(r'^timeup/',views.timeup, name='timeup')
                        )

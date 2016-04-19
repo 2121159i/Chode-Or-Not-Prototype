@@ -2,6 +2,8 @@
 
 {% load staticfiles %}
 
+{% block title %} Countdown Timer {% endblock %}
+
 {% block body_block %}
 
     <div class="container center-align ">
@@ -9,8 +11,10 @@
         <div id="countdown_timer">
         </div><br/>
 {#        <h5 class="center " style="width: 100%;">This should be vertically aligned</h5>#}
+    </div><br/>
+    <div class="center center-align center-block">
+    <a href="/chodeOrNot/timeup" id="download-button" class="btn-large waves-effect waves-light deep-purple accent-3 ">Finish Challenge</a>
     </div>
-
 
 
     <script src = "{% static 'js/countdown_timer.js' %}"></script>
