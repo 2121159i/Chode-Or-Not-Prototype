@@ -16,13 +16,11 @@ var myVar = setInterval(myTimer, 1000);
 
 function myTimer() {
     if (clock.getTime().time == 0){
-       setTimeout(function(){window.location.replace("/chodeOrNot/");}, 1000);
+       setTimeout(function(){window.location.replace("/chodeOrNot/timeup");}, 2000);
 
     }
 }
-//if (clock.getTime().time == 0){
-//        alert("AH NEIN");
-//}
+
 
 
 
