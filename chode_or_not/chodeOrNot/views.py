@@ -25,3 +25,13 @@ def timer(request):
 def timeup(request):
     context_dict = {}
     return render(request, 'ChodeOrNot/timeup.html', context_dict)
+
+
+def success(request):
+    context_dict = {}
+    return render(request, 'ChodeOrNot/success.html', context_dict)
+
+
+def fail(request):
+    context_dict = {}
+    return render(request, 'ChodeOrNot/fail.html', context_dict)
