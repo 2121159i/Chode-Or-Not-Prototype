@@ -37,11 +37,11 @@
           <li><a href ="{% url 'disclaimer' %}">Disclaimer</a></li>
       </ul>
 
-      <ul id="nav-mobile" class="side-nav">
-        <li>Menu</li><br/>
-          <li><a href = "{% url 'index' %}">Home</a></li>
-          <li><a href ="{% url 'terms' %}">Terms and Conditions</a></li>
-          <li><a href ="{% url 'disclaimer' %}">Disclaimer</a></li>
+      <ul id="nav-mobile" class="side-nav red accent-3">
+        <li>Menu</li>
+          <li class="black-text"><a href = "{% url 'index' %}">Home</a></li>
+          <li class="black-text"><a href ="{% url 'terms' %}">Terms and Conditions</a></li>
+          <li class="black-text"<a href ="{% url 'disclaimer' %}">Disclaimer</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -53,10 +53,10 @@
 
 
 
-    <footer class="page-footer red accent-3">
+    <footer class="page-footer red accent-3 footer-copyright">
     <div class="footer-copyright">
-      <div class="container center-align">
-      Chode or  Not™
+      <div class="container center-align"><a class="white-text" href={% url 'index' %}>
+      Chode or  Not™ </a>
       </div>
     </div>
   </footer>
