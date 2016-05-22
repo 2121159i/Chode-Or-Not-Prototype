@@ -35,3 +35,12 @@ def success(request):
 def fail(request):
     context_dict = {}
     return render(request, 'ChodeOrNot/fail.html', context_dict)
+
+def terms(request):
+    context_dict = {}
+    return render(request, 'ChodeOrNot/terms_and_conditions.html', context_dict)
+
+def disclaimer(request):
+    context_dict = {}
+    return render(request, 'ChodeOrNot/disclaimer.html', context_dict)
+

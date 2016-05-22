@@ -8,4 +8,6 @@ urlpatterns = patterns('',
         url(r'^timeup/',views.timeup, name='timeup'),
         url(r'^success/',views.success, name='success'),
         url(r'^fail/',views.fail, name='fail'),
+        url(r'^terms/',views.terms, name='terms'),
+        url(r'^disclaimer/',views.disclaimer, name='disclaimer'),
                        )
