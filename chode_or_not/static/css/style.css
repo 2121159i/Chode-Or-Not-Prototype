@@ -17,6 +17,14 @@
     width: 50%;
     display: inline-block;
     margin-top: 50px;
+
+}
+
+@media screen and (max-width: 550px) {
+    #countdown_timer{
+        zoom: 0.5;
+        -moz-transform: scale(0.5);
+    }
 }
 
 #danger_red_text_for_warning_box{
