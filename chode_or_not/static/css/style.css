@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 550px) {
     #countdown_timer{
-        zoom: 1.5;
+        zoom: 0.7;
         -moz-transform: scale(0.2);
     }
 }
