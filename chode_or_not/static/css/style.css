@@ -13,6 +13,16 @@
     font-size: inherit;
 }
 
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
 #countdown_timer{
     /*width: 50%;*/
     /*display: inline-block;*/
@@ -63,5 +73,6 @@
 #question_text {
     font-size: 20pt;
 }
+
 
 
