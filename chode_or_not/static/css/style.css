@@ -24,11 +24,18 @@ main {
 }
 
 #countdown_timer{
-    /*width: 50%;*/
-    /*display: inline-block;*/
+    width: auto;
+    display: inline-block;
     margin-top: 50px;
 
 }
+
+.container.clock-wrapper {
+    text-align: center;
+}
+
+
+
 
 @media screen and (max-width: 480px) {
     #countdown_timer{
