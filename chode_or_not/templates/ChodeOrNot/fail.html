@@ -6,14 +6,22 @@
 
 {% block body_block %}
     <div class = "container center-align">
-    <h2 class="white-text">Fail</h2>
+      <h2 class="white-text">Fail</h2>
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="L6JE7XQ2QGPQC">
-    <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-    </form>
+        <p>
+           Ah, so you have failed to complete the challenge. Giving $10 is completely optional,
+           however this is one of the best way to build that emotional leverage so that next time you push
+           yourself harder and do it.
+        </p>
+        <iframe src="//giphy.com/embed/3o8doYDOYGgFZhpIuA" id="fail-gif" width="480" height="269" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p>
+
+      <!-- This is for all the paypal shenanigans.  -->
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="L6JE7XQ2QGPQC">
+      <input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
 
 
     </div>
