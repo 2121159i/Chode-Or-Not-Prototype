@@ -40,6 +40,6 @@ def terms(request):
     context_dict = {}
     return render(request, 'ChodeOrNot/terms_and_conditions.html', context_dict)
 
-def disclaimer(request):
+def howitworks(request):
     context_dict = {}
-    return render(request, 'ChodeOrNot/disclaimer.html', context_dict)
+    return render(request, 'ChodeOrNot/howitworks.html', context_dict)
