@@ -9,10 +9,45 @@
     <!-- <div class="section no-pad-bot" id="index-banner"> -->
     <div class="container">
         <h2 class="center black-text">Chode or Not?</h2>
-        <div class="card-content  ">
-      <p class="center red-text" id="danger_red_text_for_warning_box">Are You Ready To Take The Chode or Not Challenge?<br/>
-                                                                            1 hour. 7 Approaches. $10 If You Fail To Complete.</p>
-        </div>
+        <!-- <div class="card-content  "> -->
+      <!-- <p class="center red-text" id="danger_red_text_for_warning_box">Are You Ready To Take The Chode or Not Challenge?<br/> -->
+                                                                          <!-- 1 hour. 7 Approaches. $10 If You Fail To Complete.</p> -->
+        <!-- </div> -->
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="{% static 'images/dsc_0504-version-2.jpg' %}"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Chode or Not?</h3>
+              <h5 class="light grey-text text-lighten-3">Welcome, are you going to complete the challenge?</h5>
+            </div>
+          </li>
+          <li>
+            <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>1 hour.</h3>
+              <h5 class="light grey-text text-lighten-3">You have 60 minutes to do it.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>7 approaches</h3>
+              <h5 class="light grey-text text-lighten-3">So, what is it? <br/> Talk to 7 girls.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="{% static 'images/losing_money.jpg' %}"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>$10!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's the kicker - you lose 10 dollars if you do not do it.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <br/>
+
+
       <div class="row center">
         <a href="/chodeOrNot/timer" id="challenge-button" class="btn-large waves-effect waves-light blue accent-3">Challenge Accepted</a>
       </div>
@@ -22,4 +57,5 @@
 
 
 
+<script src="{% static 'js/slider.js' %}"></script>
 {% endblock %}
