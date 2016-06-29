@@ -8,6 +8,17 @@
  * Made By MaterializeCSS.com
  */
 
+ html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*@font-face {
+  font-family: 'Butler-Bold';
+  src: url('../fonts/Butler_Webfront/butler_bold-webfont.woff');
+  src: local('../fonts/Butler_Webfront/butler_bold-webfont.woff')
+}*/
+
+
 .icon-block {
     padding: 0 15px;
 }
@@ -18,7 +29,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-image : url('../images/otis_redding.png'); 
+    /*background-image : url('../images/otis_redding.png'); */
 }
 main {
     flex: 1 0 auto;
